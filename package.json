@@ -1,0 +1,28 @@
+{
+  "name": "globaltestexercise2",
+  "version": "1.0.0",
+  "description": "Sauce Demo Cypress Test Exercise",
+  "main": "index.js",
+  "files": [
+    "cypress"
+  ],
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^9.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purushothkrishnaswamy/GlobalTestExercise2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/purushothkrishnaswamy/GlobalTestExercise2/issues"
+  },
+  "homepage": "https://github.com/purushothkrishnaswamy/GlobalTestExercise2#readme"
+}

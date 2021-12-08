@@ -1,0 +1,12 @@
+{
+  "email1": "standard_user",
+  "password1": "secret_sauce",
+  "email2": "locked_out_user",
+  "password2": "secret_sauce",
+  "FirstName": "FirstName",
+  "LastName": "SecondName",
+  "PostalCode": "GB1 221",
+  "FirstName1": "FirstName",
+  "LastName1": "SecondName",
+  "PostalCode1": "GB1 221"
+}
