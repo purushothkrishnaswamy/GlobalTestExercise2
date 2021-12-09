@@ -6,7 +6,11 @@ describe('LoginTestSuite', () => {
 
     it('can login with valid user', () => {
         // Check Valid User Input
-        cy.login()
+        // cy.login()
+        cy.fixture('users').then(function (data) {
+            this.data = data
+            cy.login(this.data.username1, this.data.password1)
+        })
         cy.get('.header_secondary_container').should('contain', 'Products')
     })
 
@@ -14,14 +18,12 @@ describe('LoginTestSuite', () => {
 
         // Check Locked User as Input
         // Use data stored in Fixture/example.json
-        cy.fixture('users').then(function (data_login) {
-            this.data_login = data_login
-            //     Invalid user credentials
-            cy.get('[data-test="username"]').type(this.data_login.email2)
-            cy.get('[data-test="password"]').type(this.data_login.password2)
-            cy.get('[data-test="login-button"]').click()
-            cy.get('[data-test="error"]').should('contain', 'Epic sadface: Sorry, this user has been locked out.')
+        cy.fixture('users').then(function (data) {
+            this.data = data
+            cy.login(this.data.username2, this.data.password2)
         })
+        cy.get('[data-test="error"]').should('contain', 'Epic sadface: Sorry, this user has been locked out.')
+
     })
 
 })

@@ -1,7 +1,7 @@
 {
-  "email1": "standard_user",
+  "username1": "standard_user",
   "password1": "secret_sauce",
-  "email2": "locked_out_user",
+  "username2": "locked_out_user",
   "password2": "secret_sauce",
   "FirstName": "FirstName",
   "LastName": "SecondName",
