@@ -20,3 +20,31 @@ Requirement for Test Exercise 2 -- UI automation
 * We don't expect every single aspect of the journey to be thoroughly tested, but would expect to see some set of scenarios tested
 * A README.md file explaining the framework briefly and how to run the tests, what you need installed
 * Pushed to GitHub for review
+
+Precondition
+---
+Node 
+Cypress
+
+Steps
+---
+```bash
+## clone this repo to a local directory
+git clone https://github.com/purushothkrishnaswamy/GlobalTestExercise2.git
+
+## cd into the cloned repo
+cd GlobalTestExercise2
+
+## install the node_modules
+npm install
+
+We are now ready to run Cypress tests.
+
+Run Cypress Test locally
+---
+```bash
+## launch the test runner in background
+npm run test
+## launch test runner in cypress browser
+npm run cypress
+```
